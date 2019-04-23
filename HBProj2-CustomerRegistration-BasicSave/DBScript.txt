@@ -1,0 +1,10 @@
+SQL> create table customer (custNo number(5)primary key,custName varchar2(10),address varchar2(10),mobNo number(10));
+
+
+SQL> desc customer;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSTNO                                    NOT NULL NUMBER(5)
+ CUSTNAME                                           VARCHAR2(10)
+ ADDRESS                                            VARCHAR2(10)
+ MOBNO                                              NUMBER(10)
