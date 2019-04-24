@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        	<!-- class cfgs -->
+        	<class name="com.mac.entity.BankAccount" table="BANKACCOUNT">
+        		<id name="accNo" column="ACCNO"/>
+        		<property name="holderName" column="HOLDERNAME"/>
+        		<property name="balance" column="BALANCE"/>
+        		<property name="type" column="TYPE"/>
+        	</class>
+        </hibernate-mapping>
