@@ -1,0 +1,2 @@
+
+create table BrandFactory(custMobileNo number(11),custName varchar2(20),custAddrs varchar2(20),rewardPoints number(5));

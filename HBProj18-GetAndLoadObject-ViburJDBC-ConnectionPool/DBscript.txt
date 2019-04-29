@@ -1,0 +1,2 @@
+SQL> create table Customer(custid number(5)primary key,custname varchar2(10),
+address varchar2(10),mobno number(10));

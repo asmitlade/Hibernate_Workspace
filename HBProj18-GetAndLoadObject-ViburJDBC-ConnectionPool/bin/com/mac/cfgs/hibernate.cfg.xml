@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+	<!-- DB connection properies -->
+   		<property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+   		<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+   		<property name="connection.username">system</property>
+   		<property name="connection.password">manager</property>
+	
+	<!-- Vibur connection properies -->
+		<property name="connection.provider_class">
+       		 org.vibur.dbcp.integration.ViburDBCPConnectionProvider
+    	</property>
+    	<property name="vibur.poolInitialSize">10</property>
+    	<property name="vibur.poolMaxSize">100</property>
+    	<property name="vibur.connectionIdleLimitInSeconds">30</property>
+    	<property name="vibur.testConnectionQuery">isValid</property>
+
+		<!-- Mapping file name -->
+		<mapping resource="com/mac/entity/Customer.hbm.xml" />
+	</session-factory>
+
+</hibernate-configuration>

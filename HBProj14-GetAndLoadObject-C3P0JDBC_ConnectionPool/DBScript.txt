@@ -1,0 +1,8 @@
+SQL> desc insurancepolicy;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ---------------------------
+ POLICYID                                  NOT NULL NUMBER(5)
+ POLICYNAME                                         VARCHAR2(10)
+ TENURE                                             NUMBER(10)
+ COMPANY                                            VARCHAR2(10)
+ INITIALAMT                                         NUMBER(10,2)

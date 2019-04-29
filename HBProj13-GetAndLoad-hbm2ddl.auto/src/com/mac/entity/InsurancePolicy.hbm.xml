@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        
+        <hibernate-mapping>
+        	<class name="com.mac.entity.InsurancePolicy" table="INSURANCEPOLICY1">
+				<id name="policyId" column="POLICYID" length="5" type="int"/>
+				<property name="policyName" column="POLICYNAME" length="10" type="string"/>        	
+        		<property name="tenure" column="TENURE" length="5" type="int"/>
+        		<property name="company" column="COMPANY" length="10" type="string"/>
+        		<property name="initialAmt" column="INITIALAMT" length="10" type="float" precision="2"/>
+        	</class>
+        </hibernate-mapping>

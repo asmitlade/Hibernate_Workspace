@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        	<!-- class cfgs -->
+        	<class name="com.mac.entity.BrandFactory"  table="BRANDFACTORY"   dynamic-update="true" >
+     			<id name="custMobileNo" column="CUSTMOBILENO" length="11" type="long"  />
+     			<property name="custName" column="CUSTNAME" length="20" type="string"/>
+     			<property name="custAddrs" column="CUSTADDRS"  length="20" type="string"/>
+     			<property name="rewardPoints" column="REWARDPOINTS"  length="10" type="int"/>
+   			</class>
+        </hibernate-mapping>
