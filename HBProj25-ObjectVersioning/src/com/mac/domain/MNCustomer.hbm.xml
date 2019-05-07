@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        	<!-- class cfgs -->
+        	<class name="com.mac.domain.MNCustomer" table="MNCUSTOMER">
+        		<id name="custId" column="CUSTID">
+        			<generator class="increment"/>
+        		</id>
+        		<version name="tuneChangeCount" type="int"/>
+        		<property name="custName" column="CUSTNAME"/>
+        		<property name="mobileNo" column="MOBILENO"/>
+        		<property name="callerTune" column="CALLERTUNE"/>
+        	</class>
+        </hibernate-mapping>

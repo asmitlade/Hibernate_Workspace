@@ -1,0 +1,3 @@
+create table AirtelCustomer(mobNo number(11)primary key, custName varchar2(10),idProofDoc varchar2(15), status varchar2(10))
+/
+

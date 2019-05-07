@@ -1,0 +1,2 @@
+create table MNCustomer (custid number(5)primary key, custname varchar2(10), mobileno number(11), callertune varchar2(15), tuneChangeCount number(5))
+/

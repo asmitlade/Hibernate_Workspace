@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        	<!-- class cfgs -->
+        	<class name="com.mac.entity.ProgrammerProjectInfo" table="PROGRAMMER_PROJECT">
+        		<composite-id name="id" class="com.mac.entity.ProgProjID">
+        			<key-property name="progId" column="PROG_ID"/>
+        			<key-property name="projId" column="PROJ_ID"/>
+        		</composite-id>
+        		<property name="progName" column="PROG_NAME"/>
+        		<property name="projName" column="PROJ_NAME"/>
+        		<property name="salary" column="SALARY" precision="2"/>
+        	</class>
+        </hibernate-mapping>

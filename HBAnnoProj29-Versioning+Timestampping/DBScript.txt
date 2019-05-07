@@ -1,0 +1,2 @@
+create table bankacc (accno number(5)primary key, holdername varchar2(10), balance number(10,2), type varchar2(10), openaccount timestamp, updatecount number(10),lastupdate timestamp)
+/
