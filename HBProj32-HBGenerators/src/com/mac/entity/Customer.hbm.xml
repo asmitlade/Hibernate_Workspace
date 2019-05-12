@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        	<!-- class cfgs -->
+        	<class name="com.mac.entity.Customer" table="CUSTOMER">
+        		<id name="custId" column="CUSTID">
+        			<!-- <generator class="assigned"/> -->
+        			<!-- <generator class="increment"/> -->
+        			<!-- <generator class="identity"/> -->
+        			<!-- <generator class="sequence"/>-->
+        			
+        			<!-- <generator class="sequence">
+        			<param name="sequence_name">custId_seq</param>
+        			</generator> -->
+        			
+        			<!-- hilo removed in 5.x  -->
+        			<!-- <generator class="hilo">
+        			<param name="table">source_hi</param>
+        			<param name="column">hi</param>
+        			<param name="max_lo">5</param>
+        			</generator> -->
+        			
+        			<!-- <generator class="seqhilo">
+        			<param name="sequence">custId_seq</param>
+        			<param name="max_lo">5</param>
+        			</generator> -->
+        			
+        			<!-- native removed in 5.x  -->
+        			<!-- <generator class="native"/> -->
+        		
+        		</id>
+        		<property name="custName" column="CUSTNAME"/>
+        		<property name="address" column="ADDRESS"/>
+        		<property name="mobNo" column="MOBNO"/>
+        	</class>
+        </hibernate-mapping>
