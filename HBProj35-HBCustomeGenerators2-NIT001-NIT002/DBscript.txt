@@ -1,0 +1,5 @@
+SQL> create table Customer2(custid varchar2(10)primary key,custname varchar2(10),
+address varchar2(10),mobno number(10));
+
+
+SQL> create sequence nit_seq start with 1 increment by 1;

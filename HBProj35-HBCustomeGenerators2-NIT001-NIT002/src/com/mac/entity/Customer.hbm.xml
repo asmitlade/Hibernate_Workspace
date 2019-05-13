@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+        
+        <hibernate-mapping>
+        	<!-- class cfgs -->
+        	<class name="com.mac.entity.Customer" table="CUSTOMER2">
+				<id name="custId" column="CUSTID" type="string" length="10">
+					<generator class="com.mac.generator.NITCustomeGenerator"/>
+				</id>        			
+        		
+        		<property name="custName" column="CUSTNAME" type="string" length="10"/>
+        		<property name="address" column="ADDRESS" type="string" length="10"/>
+        		<property name="mobNo" column="MOBNO" type="long" length="10"/>
+        	</class>
+        </hibernate-mapping>
